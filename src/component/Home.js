@@ -18,6 +18,7 @@ import Slide from "react-reveal/Slide";
 import Bounce from "react-reveal/Bounce";
 import Attraction from "./Attraction";
 import Bar from "./Bar";
+import { FaPlay } from "react-icons/fa";
 import { imagePath } from "../images/imagePath";
 // import "owl.carousel/dist/assets/owl.theme.default.css";
 const images24 = imagePath.images24;
@@ -31,7 +32,7 @@ const eventOneeee = imagePath.eventOneeee;
 const gannn = imagePath.gannn;
 const resto = imagePath.resto;
 const bg_dot = imagePath.bg_dot
-const aboutbg = imagePath.aboutbg;
+const aboutbg = imagePath.bg_dot;
 const Home = () => {
   const formSubmit = () => {
     var custName;
@@ -563,8 +564,9 @@ sunder farm resort karjat"
             data-setbg="img/video-inside-bg.jpg"
             style={{ backgroundImage: `url(${images25})` }}
           >
-            <a href="https://youtu.be/Pyi9R7d2IVI" className="pop-up">
-              <i className="fa fa-play" />
+            <a href="https://youtu.be/Pyi9R7d2IVI" style={{display:'flex', justifyContent:'center', alignItems:'center'}} className="pop-up">
+              {/* <i className="fa fa-play" /> */}
+              <FaPlay className="fa fa-play" />
             </a>
           </div>
         </div>
