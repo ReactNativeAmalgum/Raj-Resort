@@ -1,0 +1,173 @@
+/*---------------------
+  Call To Action
+-----------------------*/
+
+.callto-section {
+	overflow: hidden;
+	background: #cd5f2d;
+	padding-top: 55px;
+	padding-bottom: 50px;
+}
+
+.callto-section .callto-text {
+	float: left;
+}
+
+.callto-section .callto-text h2 {
+	color: #ffffff;
+	font-weight: 500;
+	line-height: 60px;
+}
+
+.callto-section .primary-btn {
+	float: right;
+	background: #3c6845;
+}
+
+
+
+/*---------------------
+  Services
+-----------------------*/
+
+.services-section {
+	padding-bottom: 0;
+	padding-top: 80px;
+}
+@media(max-width:990px)
+{
+	.services-section {
+		padding-bottom: 0;
+		padding-top: 50px;
+	}
+}
+@media(max-width:750px)
+{
+	.services-section {
+		padding-bottom: 0;
+		padding-top: 30px;
+	}
+}
+@media(max-width:500px)
+{
+	.services-section {
+		padding-bottom: 0;
+		padding-top: 20px;
+	}
+}
+
+.services-item {
+	margin-bottom: 100px;
+}
+
+.services-item .si-pic {
+	height: 293px;
+	position: relative;
+	background-size: cover;
+        background-position: center center;
+}
+.services-item .si-pic img{
+	height: 100%;
+    width:100%;
+	
+}
+@media(max-width:1250px)
+{
+	.services-item .si-pic {
+		height: 293px;
+		position: relative;
+		background-size: cover;
+			background-position: center center;
+	}
+	.services-item .si-pic img{
+		height: 100%;
+		width:100%;
+		
+	}
+}
+@media(max-width:990px)
+{
+	.services-item .si-pic {
+		height: 293px;
+		position: relative;
+		background-size: cover;
+			background-position: center center;
+	}
+	.services-item .si-pic img{
+		height: 100%;
+		width:100%;
+		
+	}
+}
+@media(max-width:500px)
+{
+	.services-item .si-pic {
+		height: 293px;
+		position: relative;
+		background-size: cover;
+			background-position: center center;
+	}
+	.services-item .si-pic img{
+		height: 100%;
+		width:100%;
+		
+	}
+}
+.services-item .si-pic .service-icon {
+	width: 85px;
+	height: 85px;
+	background: #cd5f2d;
+	text-align: center;
+	line-height: 89px;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -45px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding:15px;
+	left: 50%;
+	-webkit-transform: translateX(-44.5px);
+	transform: translateX(-44.5px);
+}
+.service-icon img {
+	width:100%;
+	height:100%;
+	
+}
+
+.services-item .si-text {
+	text-align: center;
+	padding-top: 75px;
+}
+
+.services-item .si-text h3 {
+	color: #3c6845;
+	font-weight: 600;
+	margin-bottom: 18px;
+}
+/*---------------------
+  Kids Section
+-----------------------*/
+
+.kid-pic {
+	/* margin: 0 -15px; */
+	height: 531px;
+}
+
+.kid-pic img {
+	height: 450px;
+	min-width: 100%;
+	width:100%;
+}
+
+.kid-text {
+	max-width: 626px;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 48px;
+}
+
+.kid-text p {
+	margin-bottom: 42px;
+}

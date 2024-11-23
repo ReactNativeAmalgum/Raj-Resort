@@ -1,0 +1,219 @@
+.myGallery .filters li {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.myGallery {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#containergallery {
+    margin: auto;
+}
+
+.myGallery .grid-item {
+    display: inline-block;
+    height: 259px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 1291px;
+}
+
+.myGallery .grid-item img {
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* filter: url(filters.svg#grayscale); */
+
+}
+
+
+.myGallery .grid-item img:hover {
+    filter: none;
+}
+
+.myGallery .isotope-pager .pager {
+    display: inline-block;
+}
+
+.myGallery .filters {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+
+.myGallery .filters ul {
+    list-style: none;
+    padding: 20px 10px;
+    box-shadow: -1px 1px 11px rgba(0, 0, 0, 0.4);
+    margin: 0 40px;
+    border-radius: 30px;
+    background-color: #232323;
+}
+
+.myGallery .filters li {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.myGallery .filters li a {
+    color: #b6b6b6;
+    text-decoration: none;
+}
+
+.myGallery .filters li a:hover {
+    color: #fff;
+}
+
+@media (max-width: 990px) {
+    .titleSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+    }
+}
+
+/* .myGallery .filters li:hover {
+  box-shadow: -1px 1px 11px rgba(0, 0, 0, .4);
+  border-radius: 15px;
+  } */
+
+.myGallery .filters li.active a {
+    color: #f26e20;
+    border: 1px solid var(---primaryColor);
+    border-radius: 15px;
+    box-shadow: -1px 1px 11px rgba(0, 0, 0, 0.4);
+    padding: 10px 25px;
+}
+
+.myGallery .isotope-pager a {
+    margin: 6px 1px;
+    display: inline-block;
+    width: 50px;
+    /* height: 60px; */
+    line-height: 31px;
+    color: #b6b6b6;
+    font-weight: 600;
+    transition: 0.3s;
+    /* position: relative; */
+    /* padding-right: 26px; */
+    box-shadow: -1px 1px 11px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color: #232323;
+    border: 0.5px solid #e3ca66;
+    text-decoration: none;
+}
+
+.myGallery .isotope-pager a:hover {
+    color: #fff;
+    border: 0.5px solid #ffeeac;
+    box-shadow: -1px 1px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.myGallery .isotope-pager .active {
+    color: #e3ca66 !important;
+    box-shadow: -1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color: #161616;
+    border: 1px dotted #e3ca66;
+}
+
+.myGallery .isotope-pager .prev {
+    border-radius: 30px 0 0 30px;
+}
+
+.myGallery .isotope-pager .num::before,
+.myGallery .next::before {
+    border-right: 20px solid #2c3e50;
+    right: 100%;
+}
+
+.myGallery .isotope-pager .num:after,
+.myGallery .prev:after {
+    border-right: 20px solid #f1f1f1;
+    right: 0;
+}
+
+.myGallery .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.myGallery .grid-item:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 600px) {
+    .myGallery .grid-item {
+        display: inline-block;
+        height: 259px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        width: 400px;
+    }
+
+    .myGallery .filters {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 12px;
+        padding-top: 0px;
+    }
+
+    .myGallery .filters ul {
+        list-style: none;
+        padding: 8px 0px;
+        box-shadow: -1px 1px 11px rgb(0 0 0 / 40%);
+        margin: 0 6px;
+        border-radius: 14px;
+        background-color: #232323;
+    }
+
+    .myGallery .filters li {
+        display: inline-block;
+        padding: 5px 4px;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .myGallery .filters li.active a {
+        color: var(---secondColor) !;
+        border: 1px solid var(---primaryColor);
+        border-radius: 15px;
+        box-shadow: -1px 1px 11px rgb(0 0 0 / 40%);
+        padding: 5px 14px;
+    }
+}
+
+.titleSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    flex-direction: column;
+    color: #008000;
+}

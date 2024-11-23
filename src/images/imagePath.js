@@ -1,0 +1,18 @@
+export const imagePath =  {
+    shrigaon_attraction : require('../images/event-raj-12.a5c99bd1ea3e5abfcc25.webp'),
+    panjkot : require('../images/green-bann.68912b47be5d0046ec7b.jpg'),
+    beach_kelva : require('../images/event-raj-6.a9803706ed220a76b3ed.png'),
+    jpeg_optimizer_bar_img : require('../images/jpeg-optimizer_bar-img.3974a95ac0359005818f.jpeg'),
+    raj_room: require('../images/green-bann.68912b47be5d0046ec7b.jpg'),
+    gannn: require('../images/20200214_195130_Original.89dd1d3bf96c24ad552f.jpg'),
+    resto:require('../images/jpeg-optimizer_bar-img.3974a95ac0359005818f.jpeg'),
+    bg_dot:require('../images/20200214_195130_Original.89dd1d3bf96c24ad552f.jpg'),
+    logo:require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    images24: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    images25: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    eventOne: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    eventOnee: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    eventOneee: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    eventOneeee: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+    aboutbg: require('../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png'),
+}
