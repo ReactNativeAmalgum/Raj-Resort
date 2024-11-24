@@ -4,30 +4,28 @@ import { PiTelevisionSimpleBold } from "react-icons/pi";
 import { FaWifi } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
 import ImageListItem from '@mui/material/ImageListItem';
-import bollon from "../../src/images/Room/0a47bccf-b9bc-48be-b75d-fb92c4374d63.avif"
-import roomwithoutboll from "../../src/images/Room/raj-room.avif"
-import banner from "../../src/images/Room/room-banner.webp"
 import { Link } from "react-router-dom";
-
-
-
-
 import '../css/Rooms.css'
 // import pool from '../images/pic5.jpg'
 import Footer from '../component/Footer'
-import room1 from "../images/gallery/deluxe-dormitory.jpg";
-import room2 from "../images/gallery/deluxe-room.jpg";
 // import room3 from "../images/gallery/double-bed-room.jpg";
 // import room4 from "../images/gallery/double-2.jpg";
 // import room5 from "../images/gallery/deluxe-dormitory.jpg";
 // import room6 from "../images/gallery/dormitory-room.jpg";
-import room7 from "../images/gallery/deluxe-room.jpg";
 // import room8 from "../images/gallery/single-bedroom.jpg";
 import $ from 'jquery';
 import Modal from "react-bootstrap/Modal";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { imagePath } from "../images/imagePath";
+const roomwithoutboll = imagePath.room1;
+const banner = imagePath.bann;
+const room1 = imagePath.bann;
+const room2 = imagePath.bann;
+const room3 = imagePath.bann;
+const bollon = imagePath.room2;
+
 // import "swiper/css/navigation";
 // import { Navigation } from "swiper";
 const Rooms = () => {
@@ -263,13 +261,6 @@ const Rooms = () => {
                                         style={{ backgroundImage: `url(${bollon})` }}
                                     />
                                 </SwiperSlide>
-                                {/* <SwiperSlide>
-            <div
-                    className="single-img set-bg"
-                    data-setbg="img/rooms/room-3.jpg"
-                    style={{ backgroundImage: `url(${"https://www.raj-resort.in/images/gallery/resort/12.jpg"})` }}
-                  />
-            </SwiperSlide> */}
 
                             </Swiper>
                         </div>
@@ -665,174 +656,6 @@ const Rooms = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="row">
-      <div className="col-lg-6" id="room1">
-      <Swiper
-            navigation={true}
-            breakpoints={{
-              570: {
-                slidesPerView: 1,
-                spaceBetween: 50,
-              },
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 50,
-              },
-              768: {
-                slidesPerView: 1,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView:1,
-                spaceBetween: 30,
-              },
-            }}
-            modules={[Navigation]}
-            className="mySwiper1"
-          >
-            <SwiperSlide>
-            <div
-                    className="single-img set-bg"
-                    data-setbg="img/rooms/room-3.jpg"
-                    style={{ backgroundImage: `url(${room3})` }}
-                  />
-            </SwiperSlide>
-            <SwiperSlide>
-            <div
-                    className="single-img set-bg"
-                    data-setbg="img/rooms/room-3.jpg"
-                    style={{ backgroundImage: `url(${room4})` }}
-                  />
-            </SwiperSlide>
-           
-          </Swiper>
-      </div>
-      <div className="col-lg-6" id="room2">
-        <div className="ri-text">
-          <div className="section-title">
-            <div className="section-title">
-              <span>a memorable holliday</span>
-              <h2>Double BedRoom</h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra
-              maecenas. Donec in sodales dui, a blandit nunc. Pellentesque id
-              eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam
-              massa odio, porttitor vitae efficitur non, ultricies volutpat
-              tellus.
-            </p>
-            <div className="ri-features">
-              <div className="ri-info">
-                <i />
-                <p>Smart TV</p>
-              </div>
-              <div className="ri-info">
-                <i className="fa fa-wifi" />
-                <p>High Wi-fii</p>
-              </div>
-              <div className="ri-info">
-                <i className="fa fa-snowflake-o" />
-                <p>AC</p>
-              </div>
-              // <div className="ri-info">
-              //   <i className="fa fa-car" />
-              //   <p>Parking</p>
-              // </div>
-              
-            </div>
-            <a href="#" className="primary-btn">
-              Make a Reservation
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="row">
-      <div className="col-lg-6 order-lg-2">
-      <Swiper
-            navigation={true}
-            breakpoints={{
-              570: {
-                slidesPerView: 1,
-                spaceBetween: 50,
-              },
-              640: {
-                slidesPerView: 1,
-                spaceBetween: 50,
-              },
-              768: {
-                slidesPerView: 1,
-                spaceBetween: 40,
-              },
-              1024: {
-                slidesPerView:1,
-                spaceBetween: 30,
-              },
-            }}
-            modules={[Navigation]}
-            className="mySwiper1"
-          >
-            <SwiperSlide>
-            <div
-                    className="single-img set-bg"
-                    data-setbg="img/rooms/room-3.jpg"
-                    style={{ backgroundImage: `url(${room5})` }}
-                  />
-            </SwiperSlide>
-            <SwiperSlide>
-            <div
-                    className="single-img set-bg"
-                    data-setbg="img/rooms/room-3.jpg"
-                    style={{ backgroundImage: `url(${room6})` }}
-                  />
-            </SwiperSlide>
-           
-          </Swiper>
-      </div>
-      <div className="col-lg-6 order-lg-1">
-        <div className="ri-text left-side">
-          <div className="section-title">
-            <div className="section-title">
-              <span>a memorable holliday</span>
-              <h2> Event Hall</h2>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra
-              maecenas. Donec in sodales dui, a blandit nunc. Pellentesque id
-              eros venenatis, sollicitudin neque sodales, vehicula nibh. Nam
-              massa odio, porttitor vitae efficitur non, ultricies volutpat
-              tellus.
-            </p>
-            <div className="ri-features">
-              <div className="ri-info">
-                <i />
-                <p>Smart TV</p>
-              </div>
-              <div className="ri-info">
-                <i className="fa fa-wifi" />
-                <p>High Wi-fii</p>
-              </div>
-              <div className="ri-info">
-                <i className="fa fa-snowflake-o" />
-                <p>AC</p>
-              </div>
-              // <div className="ri-info">
-              //   <i className="fa fa-car" />
-              //   <p>Parking</p>
-              // </div>
-              
-            </div>
-            <a href="#" className="primary-btn">
-              Make a Reservation
-            </a>
-          </div>
-        </div>
-      </div>
-    </div> */}
                 </div>
             </section>
             <Modal

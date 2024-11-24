@@ -2,12 +2,18 @@
   "name": "rajresort",
   "version": "0.1.0",
   "private": true,
+  "author": "mukund sharma <mukundsharma@gmail.com>",
+  "developer": "Mukund Sharma",
   "dependencies": {
+    "@emotion/react": "^11.13.5",
+    "@emotion/styled": "^11.13.5",
+    "@mui/material": "^6.1.8",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.22.2",
     "bootstrap": "^5.3.3",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
@@ -43,4 +49,5 @@
       "last 1 safari version"
     ]
   }
+
 }

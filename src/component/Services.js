@@ -1,34 +1,37 @@
 import { useState, React } from "react";
-import pagebanner from "../images/about_bg.jpg";
+// import pagebanner from "../images/about_bg.jpg";
 import $ from 'jquery';
 import Modal from "react-bootstrap/Modal";
 import "../css/Service.css";
-import eventbg from "../images/Event/about-imggg.jpg"
-import icon1 from '../images/icons/swimming-pool.png';
-import icon2 from '../images/icons/tent.png';
-import icon3 from '../images/icons/swimming-pool (1).png';
-import icon4 from '../images/icons/park.png';
-import icon5 from '../images/icons/cricket.png';
-import icon6 from '../images/icons/hut.png';
-import icon7 from '../images/icons/dance-floor.png';
-import icon8 from '../images/icons/restaurant.png';
-import rain from '../images/gallery/rain.jpg'
-import icon9 from '../images/icons/elephant.png';
-import swpool from '../images/editpics/19.jpg';
-import trpool from '../images/gallery/terrace-pool-night.jpg';
-import garden from '../images/gallery/garden-view4.jpg';
-import cow from '../images/editpics/15.jpg';
-import games from '../images/gallery/basket-ball.jpg';
-import hut from '../images/gallery/garden-hut.jpg';
-import play from '../images/gallery/garden-view5.jpg';
-import tent from '../images/gallery/night-camp.jpg';
-import dance from '../images/gallery/swing.jpg';
-import logo from "../images/gallery/logo1.png";
+// import eventbg from "../images/Event/about-imggg.jpg"
+// import icon1 from '../images/icons/swimming-pool.png';
+// import icon2 from '../images/icons/tent.png';
+// import icon3 from '../images/icons/swimming-pool (1).png';
+// import icon4 from '../images/icons/park.png';
+// import icon5 from '../images/icons/cricket.png';
+// import icon6 from '../images/icons/hut.png';
+// import icon7 from '../images/icons/dance-floor.png';
+// import icon8 from '../images/icons/restaurant.png';
+// import rain from '../images/gallery/rain.jpg'
+// import icon9 from '../images/icons/elephant.png';
+// import swpool from '../images/editpics/19.jpg';
+// import trpool from '../images/gallery/terrace-pool-night.jpg';
+// import garden from '../images/gallery/garden-view4.jpg';
+// import cow from '../images/editpics/15.jpg';
+// import games from '../images/gallery/basket-ball.jpg';
+// import hut from '../images/gallery/garden-hut.jpg';
+// import play from '../images/gallery/garden-view5.jpg';
+// import tent from '../images/gallery/night-camp.jpg';
+// import dance from '../images/gallery/swing.jpg';
+// import logo from "../images/gallery/logo1.png";
 
 import { Link } from "react-router-dom";
-import pool from "../images/pic5.jpg";
+// import pool from "../images/pic5.jpg";
 import Footer from "../component/Footer";
 import EventTapPanel from "./EventTapPanel";
+import { imagePath } from "../images/imagePath";
+
+const eventbg = imagePath.eventbg;
 const Services = () => {
 
     const formSubmit = () => {

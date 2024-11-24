@@ -1,11 +1,11 @@
 import { useState, React } from "react";
 import "../css/Home.css";
 import $ from "jquery";
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { PiSwimmingPoolBold } from "react-icons/pi";
 import Modal from "react-bootstrap/Modal";
 // import bannerbg from "../images/hero-bg.jpg";
-import logo from "../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png"
+import logo from "../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
@@ -28,10 +28,9 @@ const eventOnee = imagePath.eventOnee;
 const eventOneee = imagePath.eventOneee;
 const eventOneeee = imagePath.eventOneeee;
 
-
 const gannn = imagePath.gannn;
 const resto = imagePath.resto;
-const bg_dot = imagePath.bg_dot
+const bg_dot = imagePath.bg_dot;
 const aboutbg = imagePath.bg_dot;
 const Home = () => {
   const formSubmit = () => {
@@ -122,21 +121,18 @@ const Home = () => {
         content="Discover a hidden gem at Raj Resort Karjat. Unwind amidst lush green landscapes, relish delectable cuisine yourself in the tranquility of nature. "
       />
 
-      <meta
-        name="title"
-        content="Raj Resort Karjat : Unwind in Luxury"
-      />
+      <meta name="title" content="Raj Resort Karjat : Unwind in Luxury" />
       <meta
         name="keywords"
         content="resorts in karjat near station,
-resort near karjat station,
-best resort in karjat,
-best resort in karjat for family,
-best resort in karjat for couples,
-couple friendly resort in karjat,
-best resort in karjat with swimming pool,
-best resorts to stay in karjat,
-sunder farm resort karjat"
+        resort near karjat station,
+        best resort in karjat,
+        best resort in karjat for family,/`
+        best resort in karjat for couples,
+        couple friendly resort in karjat,
+        best resort in karjat with swimming pool,
+        best resorts to stay in karjat,
+        sunder farm resort karjat"
       />
       <link rel="canonical" href="https://www.sundarfarms.com/" />
       <meta http-equiv="cache-control" content="no-cache" />
@@ -191,7 +187,7 @@ sunder farm resort karjat"
       <section
         className="hero-area set-bg"
         data-setbg="img/hero-bg.jpg"
-      // style={{ backgroundImage: `url(${bannerbg})` }}
+        // style={{ backgroundImage: `url(${bannerbg})` }}
       >
         <div className="container">
           {/* <div className="row">
@@ -315,7 +311,6 @@ sunder farm resort karjat"
         </div>
       </div> */}
 
-
       {/* -----------------------about farm------------------- */}
       <section className="intro-section spad">
         <div className="container">
@@ -331,22 +326,32 @@ sunder farm resort karjat"
                   </Zoom>
                 </div>
                 <p>
-                  Experience the epitome of luxury and serenity at Raj Resort in Palghar, where sophistication seamlessly intertwines with nature's beauty. Tucked away in picturesque landscapes, our esteemed resort stands as a beacon of excellence, offering unparalleled hospitality, world-class amenities, and an array of leisure activities for guests of all ages. Indulge in the ultimate retreat, where every aspect of your stay is meticulously curated to ensure absolute comfort and relaxation. From elegantly appointed rooms and suites to captivating views of lush gardens and nearby pristine beaches, Resort in Palghar embodies the essence of tranquility.
+                  Experience the epitome of luxury and serenity at Raj Resort in
+                  Palghar, where sophistication seamlessly intertwines with
+                  nature's beauty. Tucked away in picturesque landscapes, our
+                  esteemed resort stands as a beacon of excellence, offering
+                  unparalleled hospitality, world-class amenities, and an array
+                  of leisure activities for guests of all ages. Indulge in the
+                  ultimate retreat, where every aspect of your stay is
+                  meticulously curated to ensure absolute comfort and
+                  relaxation. From elegantly appointed rooms and suites to
+                  captivating views of lush gardens and nearby pristine beaches,
+                  Resort in Palghar embodies the essence of tranquility.
                 </p>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="intro-right">
                 <p>
-                  Discover the allure of the Resort in Palghar, acclaimed as the premier destination for discerning travelers seeking a blend of luxury and natural splendor. With its unmatched charm and unparalleled offerings, our resort sets the standard for excellence in hospitality. Join us and embark on a journey filled with cherished memories and unparalleled experiences.
+                  Discover the allure of the Resort in Palghar, acclaimed as the
+                  premier destination for discerning travelers seeking a blend
+                  of luxury and natural splendor. With its unmatched charm and
+                  unparalleled offerings, our resort sets the standard for
+                  excellence in hospitality. Join us and embark on a journey
+                  filled with cherished memories and unparalleled experiences.
                 </p>
-                <button
-
-                  className="primary-btn"
-                >
-                  <Link to="/Contact">
-                    Make a Reservation
-                  </Link>
+                <button className="primary-btn">
+                  <Link to="/Contact">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -397,10 +402,7 @@ sunder farm resort karjat"
                   // onClick={handleShow}
                   className="primary-btn"
                 >
-                  <Link to="/Contact">
-
-                    Make a Reservation
-                  </Link>
+                  <Link to="/Contact">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -408,7 +410,7 @@ sunder farm resort karjat"
               <div
                 className="facilities-item set-bg fi-right  external"
                 data-setbg="img/faci-2.jpg"
-              // style={{ backgroundImage: `url(${"https://www.raj-resort.in/images/gallery/resort/9.jpg"})` }}
+                // style={{ backgroundImage: `url(${"https://www.raj-resort.in/images/gallery/resort/9.jpg"})` }}
               >
                 <div className="fi-title">
                   <h2>Garden</h2>
@@ -420,10 +422,7 @@ sunder farm resort karjat"
                   // onClick={handleShow}
                   className="primary-btn"
                 >
-                  <Link to="/Contact">
-
-                    Make a Reservation
-                  </Link>
+                  <Link to="/Contact">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -441,7 +440,7 @@ sunder farm resort karjat"
               <div className="row">
                 <div className="section-head text-left">
                   <h2 className=" m-b5" data-title="About">
-                    Our  Restaurant
+                    Our Restaurant
                   </h2>
                   <div className="wt-separator-outer">
                     <div className="wt-separator bg-primary" />
@@ -449,7 +448,15 @@ sunder farm resort karjat"
                 </div>
                 {/* TITLE END */}
                 <h4 className=" m-t0">
-                  Nestled in Palghar, the Raj Resort boasts a restaurant offering a delectable culinary journey against the backdrop of Kelwa Beach, emphasized for its proximity thrice. Guests can relish freshly prepared seafood amidst the serene coastal setting, enjoying locally sourced ingredients in dishes served in a blend of rustic charm and modern comfort. Whether it's a leisurely breakfast or a romantic dinner, the restaurant promises an unforgettable dining experience, perfectly complementing the natural beauty of the Resort in Palghar.
+                  Nestled in Palghar, the Raj Resort boasts a restaurant
+                  offering a delectable culinary journey against the backdrop of
+                  Kelwa Beach, emphasized for its proximity thrice. Guests can
+                  relish freshly prepared seafood amidst the serene coastal
+                  setting, enjoying locally sourced ingredients in dishes served
+                  in a blend of rustic charm and modern comfort. Whether it's a
+                  leisurely breakfast or a romantic dinner, the restaurant
+                  promises an unforgettable dining experience, perfectly
+                  complementing the natural beauty of the Resort in Palghar.
                 </h4>
                 <p>
                   {/* Our full-service facility offers luxury amenities, swimming
@@ -482,7 +489,9 @@ sunder farm resort karjat"
                   >
                     <div className="icon-md m-b20">
                       <span className="icon-cell">
-                        <i className=""><PiSwimmingPoolBold /></i>
+                        <i className="">
+                          <PiSwimmingPoolBold />
+                        </i>
                       </span>
                     </div>
                     <div className="icon-content">
@@ -564,7 +573,15 @@ sunder farm resort karjat"
             data-setbg="img/video-inside-bg.jpg"
             style={{ backgroundImage: `url(${images25})` }}
           >
-            <a href="https://youtu.be/Pyi9R7d2IVI" style={{display:'flex', justifyContent:'center', alignItems:'center'}} className="pop-up">
+            <a
+              href="https://youtu.be/Pyi9R7d2IVI"
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="pop-up"
+            >
               {/* <i className="fa fa-play" /> */}
               <FaPlay className="fa fa-play" />
             </a>
@@ -587,23 +604,28 @@ sunder farm resort karjat"
                   </div>
                 </div>
                 <p>
-                  Experience unforgettable celebrations at Raj Resort in Palghar. From weddings to birthdays, our versatile venue caters to every special occasion. With lush gardens, elegant banquet halls, and personalized service, Raj Resort is the perfect choice for your next event in Palghar.
+                  Experience unforgettable celebrations at Raj Resort in
+                  Palghar. From weddings to birthdays, our versatile venue
+                  caters to every special occasion. With lush gardens, elegant
+                  banquet halls, and personalized service, Raj Resort is the
+                  perfect choice for your next event in Palghar.
                 </p>
                 <p>
-                  At Raj Resort in Palghar, we are dedicated to making every event a spectacular success. Contact us today to plan your next celebration at the premier resort for events in Palghar, and let us help you create memories that will last a lifetime. Celebrate your special moments with us, the top resort for events in Palghar.
+                  At Raj Resort in Palghar, we are dedicated to making every
+                  event a spectacular success. Contact us today to plan your
+                  next celebration at the premier resort for events in Palghar,
+                  and let us help you create memories that will last a lifetime.
+                  Celebrate your special moments with us, the top resort for
+                  events in Palghar.
                 </p>
                 {/* <p>
                 At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa
                 </p> */}
                 <button
-
                   // onClick={handleShow}
                   className="primary-btn"
                 >
-                  <Link to="/Contact">
-
-                    Make a Reservation
-                  </Link>
+                  <Link to="/Contact">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -615,7 +637,10 @@ sunder farm resort karjat"
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-5">
-                  <div className="about-img second-img">
+                  <div
+                    style={{ height: "85%" }}
+                    className="about-img second-img"
+                  >
                     <img src={eventOneee} alt="garden" />
                   </div>
                 </div>
@@ -651,12 +676,10 @@ sunder farm resort karjat"
             </div>
           </div>
           <div className="row">
-
             <div className="col-lg-12">
               <Swiper
                 spaceBetween={50}
                 slidesPerView={1}
-
                 breakpoints={{
                   640: {
                     slidesPerView: 2,
@@ -671,15 +694,14 @@ sunder farm resort karjat"
                     spaceBetween: 50,
                   },
                 }}
-
                 autoplay={{
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay, Pagination, Navigation]}
 
-              // onSlideChange={() => console.log("slide change")}
-              // onSwiper={(swiper) => console.log(swiper)}
+                // onSlideChange={() => console.log("slide change")}
+                // onSwiper={(swiper) => console.log(swiper)}
               >
                 <SwiperSlide>
                   <div className="testimonial-item">
@@ -692,8 +714,11 @@ sunder farm resort karjat"
                       <i className="fa fa-star" />
                     </div>
                     <p>
-                      The place was good, clean and the service was up to mark. I went with my family for a weekend outing..the food for lunch dinner and even next day breakfast was having different menus which my family enjoyed.
-                      Keep up the good work Raj resort 👍👍❤️
+                      The place was good, clean and the service was up to mark.
+                      I went with my family for a weekend outing..the food for
+                      lunch dinner and even next day breakfast was having
+                      different menus which my family enjoyed. Keep up the good
+                      work Raj resort 👍👍❤️
                     </p>
                     <div className="ti-author">
                       <div className="author-text">
@@ -713,7 +738,10 @@ sunder farm resort karjat"
                       <i className="fa fa-star" />
                     </div>
                     <p>
-                      Good resort with warm hospitality and service, tasty food, clean rooms. Visited 3 days back, Had a good experience. Perfect place if one.wants to spend relaxed, silent and peaceful holida
+                      Good resort with warm hospitality and service, tasty food,
+                      clean rooms. Visited 3 days back, Had a good experience.
+                      Perfect place if one.wants to spend relaxed, silent and
+                      peaceful holida
                     </p>
                     <div className="ti-author">
                       <div className="author-text">
@@ -733,7 +761,9 @@ sunder farm resort karjat"
                       <i className="fa fa-star" />
                     </div>
                     <p>
-                      We had gone there with our group of 26 ppl. The food & amenities were great. The room were of decent size. The owner was very hospitable & kind.
+                      We had gone there with our group of 26 ppl. The food &
+                      amenities were great. The room were of decent size. The
+                      owner was very hospitable & kind.
                     </p>
                     <div className="ti-author">
                       <div className="author-text">
@@ -755,7 +785,11 @@ sunder farm resort karjat"
                       <i className="fa fa-star" />
                     </div>
                     <p>
-                      The location of the resort is best, just 2 kms (15 Mins) walk from kelva beach. rooms were spacious and clean, the is an indoor pools where we enjoyed a lot, spent most of the evening on beach, stayed 2 nights here, and the accommodation was good. the seafood was awesom
+                      The location of the resort is best, just 2 kms (15 Mins)
+                      walk from kelva beach. rooms were spacious and clean, the
+                      is an indoor pools where we enjoyed a lot, spent most of
+                      the evening on beach, stayed 2 nights here, and the
+                      accommodation was good. the seafood was awesom
                     </p>
                     <div className="ti-author">
                       <div className="author-text">
@@ -775,14 +809,15 @@ sunder farm resort karjat"
                       <i className="fa fa-star" />
                     </div>
                     <p>
-                      The place seems very decent for your family to take along. Safe environment...stags are generally discouraged to ensure unruly incidences don't happen.
-                      The owner, Rohit is proactive.
-                      Can definitely improve upon the basic amenities in the rooms.
+                      The place seems very decent for your family to take along.
+                      Safe environment...stags are generally discouraged to
+                      ensure unruly incidences don't happen. The owner, Rohit is
+                      proactive. Can definitely improve upon the basic amenities
+                      in the rooms.
                     </p>
                     <div className="ti-author">
                       <div className="author-text">
-                        <h6>
-                          jeet sawant</h6>
+                        <h6>jeet sawant</h6>
                       </div>
                     </div>
                   </div>
@@ -798,7 +833,10 @@ sunder farm resort karjat"
                       <i className="fa fa-star" />
                     </div>
                     <p>
-                      Great place to go for short break. Good food, nice ambience. This place also has pool so it's fun with family and friends. Also beach is just 5 minutes away. I feel it's quite fair value for money.
+                      Great place to go for short break. Good food, nice
+                      ambience. This place also has pool so it's fun with family
+                      and friends. Also beach is just 5 minutes away. I feel
+                      it's quite fair value for money.
                     </p>
                     <div className="ti-author">
                       {/* <div className="author-pic">
@@ -823,7 +861,7 @@ sunder farm resort karjat"
         tabIndex={-1}
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-      // onHide={handleClose}
+        // onHide={handleClose}
       >
         <Modal.Body>
           <div className="partnerProgramForm">
@@ -833,10 +871,7 @@ sunder farm resort karjat"
                   <h5 className="modal-title" id="exampleModalLabel">
                     Enquiry Now
                   </h5>
-                  <div
-                    className="closeProgram closeProgram1"
-
-                  >
+                  <div className="closeProgram closeProgram1">
                     {" "}
                     <i className="fa fa-times" />{" "}
                   </div>
@@ -845,9 +880,9 @@ sunder farm resort karjat"
                   <div className="col-lg-12">
                     <form
                       action=""
-                    // method="post"
-                    // role="form"
-                    // className="php-email-form"
+                      // method="post"
+                      // role="form"
+                      // className="php-email-form"
                     >
                       <div className="row">
                         <div className="col-md-6 form-group">

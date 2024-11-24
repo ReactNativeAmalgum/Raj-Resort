@@ -9,8 +9,8 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { FreeMode, Pagination } from 'swiper/modules';
 import { imagePath } from '../images/imagePath';
-const beach = imagePath.beach_kelva;
-const dam = imagePath.beach_kelva
+const beach = imagePath.kelvabeach;
+const dam = imagePath.kelvaDam
 const panj = imagePath.panjkot;
 
 
@@ -47,7 +47,7 @@ function Attraction() {
                         >
                             <SwiperSlide>
                                 <div className="attrac-imgg">
-                                    <Image src={imagePath.shrigaon_attraction} />
+                                    <Image src={imagePath.kill} />
                                 </div>
                                 <div className="attract-p">
                                     <h3>Kelva - Shrigaon Killa</h3>
@@ -68,8 +68,8 @@ function Attraction() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="attrac-imgg">
-                                    <Image src={beach} />
+                                <div style={{width:'100%', height:'100%' , display:'flex'}} className="attrac-imgg">
+                                    <Image width={'100%'} src={beach} />
                                 </div>
                                 <div className="attract-p">
                                     <h3>Kelva Beach</h3>
@@ -79,7 +79,7 @@ function Attraction() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="attrac-imgg">
+                                <div  className="attrac-imgg">
                                     <Image src={dam} />
                                 </div>
                                 <div className="attract-p">

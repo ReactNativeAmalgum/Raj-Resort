@@ -4,7 +4,8 @@ import Footer from './Footer'
 import $ from 'jquery';
 import Modal from "react-bootstrap/Modal";
 import { Button, Form, Input } from "antd";
-import pagebanner from "../images/p4.avif";
+import { imagePath } from "../images/imagePath";
+const pagebanner = imagePath.contactbg;
 const Contact = () => {
     const submitForm = (values) => {
         console.log("values", values);

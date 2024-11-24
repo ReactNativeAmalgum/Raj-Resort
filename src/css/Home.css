@@ -389,27 +389,50 @@ p {
 
 /*========== Hover box effect =============*/
 
-.hover-box-effect{
-	-webkit-transition: all .5s ease-in-out;
-	-moz-transition:all .5s ease-in-out;
-	-ms-transition:all .5s ease-in-out;
-	-o-transition:all .5s ease-in-out;
-	transition:all .5s ease-in-out;
+.hover-box-effect {
+    position: relative; /* Positioning context for the pseudo-element */
+    overflow: hidden; /* Prevent overflow of the pseudo-element */
+    /* background-image: url(../images/bg-dots.jpg); */
+    background-repeat: repeat;
+    transition: all 0.5s ease-in-out;
 }
 
+.hover-box-effect::before {
+    content: ""; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Cover the entire parent */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(205, 95, 45, 0.8); /* Semi-transparent orange */
+    opacity: 0; /* Start fully transparent */
+    transition: ease-in-out; 
+    z-index: 1; /* Place it below the text */
+}
 .hover-box-effect:hover{
-	background-color:#cd5f2d;
-	color:#fff;
-	background-image:url(../images//green-bann.68912b47be5d0046ec7b.jpg);
-	background-repeat:repeat;
+	background-color: #cd5f2d;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEVHcEwAAACfKoRRAAAAAnRSTlMAITr63WYAAAAQSURBVAjXY2DAAMwNUIQKAB1eAYpH2ca8AAAAAElFTkSuQmCC);
+    background-repeat: repeat;
+    color: #fff;
 }
-.hover-box-effect:hover .wt-tilte{
-	color:#fff;
+.hover-box-effect:hover::before {
+    /* opacity: 1; */
+	color: white !important;
 }
 
-.hover-box-effect:hover p{
-	color:#fff;
+.hover-box-effect:hover {
+    color: #fff !important; /* Text color on hover */
 }
+
+.hover-box-effect:hover .wt-tilte {
+    color: #fff; /* Title color on hover */
+}
+
+.hover-box-effect:hover p {
+    color: #fff; /* Paragraph color on hover */
+}
+
+
 
 /*========== Icon Verticle Animation =============*/
 .v-icon {
@@ -1379,10 +1402,14 @@ button a{
 
 .homepage-about .about-img {
 	margin-bottom: 30px;
+	/* height: 200px;
+	width: 100px; */
 }
 
 .homepage-about .about-img img {
-	min-width: 100%;
+	/* min-width: 100%; */
+	width: 100%;
+	height: 100% !important;
 }
 
 

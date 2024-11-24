@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import '../css/Footer.css'
 import log from "../images/raj-logo-removebg-preview.c85a7fee59978f7e34ac.png";
+import { Paragraph } from './ServiceData';
 const Footer = () => {
     return (
         <div>
@@ -98,10 +99,11 @@ const Footer = () => {
                                     <a href="https://skdm.in" className="text-white" target="_blank">
                                         Shree Krishna Digital Marketing
                                     </a>
-                                    {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                                 </div>
                             </div>
                         </div>
+                        <Paragraph />
+
                     </div>
                 </div>
             </footer>
