@@ -1,6 +1,6 @@
 
+import { Zoom } from "react-awesome-reveal";
 import "../css/bar.css"
-import Zoom from 'react-reveal/Zoom';
 import { imagePath } from "../images/imagePath";
 const bar = imagePath.jpeg_optimizer_bar_img
 

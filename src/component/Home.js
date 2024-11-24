@@ -13,13 +13,12 @@ import { Link } from "react-router-dom";
 import "swiper/css";
 // import OwlCarousel from 'react-owl-carousel';
 // import "owl.carousel/dist/assets/owl.carousel.css";
-import Zoom from "react-reveal/Zoom";
-import Slide from "react-reveal/Slide";
-import Bounce from "react-reveal/Bounce";
 import Attraction from "./Attraction";
 import Bar from "./Bar";
 import { FaPlay } from "react-icons/fa";
 import { imagePath } from "../images/imagePath";
+import { Bounce, Fade, Slide, Zoom } from "react-awesome-reveal";
+
 // import "owl.carousel/dist/assets/owl.theme.default.css";
 const images24 = imagePath.images24;
 const images25 = imagePath.images25;
@@ -127,7 +126,7 @@ const Home = () => {
         content="resorts in karjat near station,
         resort near karjat station,
         best resort in karjat,
-        best resort in karjat for family,/`
+        best resort in karjat for family,
         best resort in karjat for couples,
         couple friendly resort in karjat,
         best resort in karjat with swimming pool,
