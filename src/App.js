@@ -13,8 +13,9 @@ import Page404 from "./component/Page404";
 const App = () => {
   return (
     <HashRouter>
+              <Navbar />
+
       <>
-        <Navbar />
         <WhatsappIcon />
         <Routes>
           <Route path="/" element={<Home />} />

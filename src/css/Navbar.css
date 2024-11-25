@@ -1312,15 +1312,20 @@
 
 
 .navbar {
-    background-color: transparent !important; 
-    background: none;
-    box-shadow: none;
-    padding-left: 30px;
-    padding-right: 30px;
+  position: absolute;
+  background-color: transparent !important;
+  background: none;
+  box-shadow: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .navbar .nav-link {
-    color: black;
+    color: white;
 }
 
 .navbar .navbar-brand img {
@@ -1329,7 +1334,7 @@
 
 
 .navbar .nav-link:hover {
-    color: #6e2b21; 
+    color: #cd5f2d; 
 }
 
 
@@ -1341,7 +1346,9 @@
     background-color: rgba(255, 255, 255, 0.5); 
 }
 
-
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #cd5f2d ;
+}
 .bookbutton{
     background: #6e2b21;
     border: none;
