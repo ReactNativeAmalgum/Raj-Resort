@@ -240,7 +240,7 @@ const Rooms = () => {
                       // onClick={handleShow}
                       className="primary-btn"
                     >
-                      <Link to="/Contact">Make a Reservation</Link>
+                      <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                     </button>
                   </div>
                 </div>
@@ -323,7 +323,7 @@ const Rooms = () => {
                       // onClick={handleShow}
                       className="primary-btn"
                     >
-                      <Link to="/Contact">Make a Reservation</Link>
+                      <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                     </button>
                   </div>
                 </div>
@@ -586,7 +586,7 @@ const Rooms = () => {
                       // onClick={handleShow}
                       className="primary-btn"
                     >
-                      <Link to="/Contact">Make a Reservation</Link>
+                      <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                     </button>
                   </div>
                 </div>

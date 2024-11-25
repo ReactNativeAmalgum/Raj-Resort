@@ -197,7 +197,7 @@ const Home = () => {
                   filled with cherished memories and unparalleled experiences.
                 </p>
                 <button className="primary-btn">
-                  <Link to="/Contact">Make a Reservation</Link>
+                  <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -248,7 +248,7 @@ const Home = () => {
                   // onClick={handleShow}
                   className="primary-btn"
                 >
-                  <Link to="/Contact">Make a Reservation</Link>
+                  <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -268,7 +268,7 @@ const Home = () => {
                   // onClick={handleShow}
                   className="primary-btn"
                 >
-                  <Link to="/Contact">Make a Reservation</Link>
+                  <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -471,7 +471,7 @@ const Home = () => {
                   // onClick={handleShow}
                   className="primary-btn"
                 >
-                  <Link to="/Contact">Make a Reservation</Link>
+                  <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                 </button>
               </div>
             </div>

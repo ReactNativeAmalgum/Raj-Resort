@@ -210,7 +210,7 @@ const About = () => {
                   or a fun-filled family vacation.
                 </p>
                 <button className="primary-btn">
-                  <Link to="/Contact">Make a Reservation</Link>
+                  <Link to="/resort-near-kelve-beach">Make a Reservation</Link>
                 </button>
               </div>
             </div>
