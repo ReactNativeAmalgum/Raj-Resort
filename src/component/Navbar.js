@@ -8,14 +8,22 @@ const logo = imagePath.logo;
 
 const Navbar = () => {
     const [showModal, setShowModal] = useState(false);
-    const [buttonColor, setButtonColor] = useState("#000"); // Initial color (adjust as needed)
+    const [buttonColor, setButtonColor] = useState("#6e2b21"); // Initial color
+    const [isOpen, setIsOpen] = useState(false); // State for navbar toggle
 
     const handleShow = () => {
         setShowModal(true);
-        setButtonColor("#6e2b21"); // Change color on click
+        setButtonColor("#6e2b21");
     };
 
-    const handleClose = () => setShowModal(false);
+    const handleClose = () => {
+        setShowModal(false);
+        setButtonColor("#000");
+    };
+
+    const toggleNavbar = () => {
+        setIsOpen(!isOpen); // Toggle the navbar open/close state
+    };
 
     return (
         <nav className="navbar navbar-expand-lg t bg-transparent">
@@ -26,15 +34,13 @@ const Navbar = () => {
                 <button 
                     className="navbar-toggler" 
                     type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" 
+                    onClick={toggleNavbar} // Use the toggle function
+                    aria-expanded={isOpen} // Update aria-expanded for accessibility
                     aria-label="Toggle navigation"
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0"> 
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
@@ -56,7 +62,7 @@ const Navbar = () => {
                                 type="button" 
                                 className="bookbutton" 
                                 onClick={handleShow} 
-                                style={{ backgroundColor: '#6e2b21' }} 
+                                style={{ backgroundColor: buttonColor, transition: 'background-color 0.3s ease' }} 
                             >
                                 Book Now
                             </button>
