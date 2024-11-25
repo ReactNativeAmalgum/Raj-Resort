@@ -26,7 +26,8 @@ function EventTapPanel() {
         <section className="myGallery">
             <div className="container">
                 <div className="titleSection">
-                    <h3>Events</h3>
+                    <h1 className='specialh1'>Resort for Events in Palghar
+                    </h1>
                 </div>
                 <div className="filters filter-button-group">
                     <ul>
@@ -55,7 +56,7 @@ function EventTapPanel() {
                                 <Image
                                     srcSet={`${item.imageUr1}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     src={`${item.imageUr1}?w=248&fit=crop&auto=format`}
-                                    alt={item.title}
+                                    alt={'Resort for Events in Palghar'}
                                     loading="lazy"
                                 />
                             </ImageListItem>

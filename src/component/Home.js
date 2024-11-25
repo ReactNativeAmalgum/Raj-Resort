@@ -18,6 +18,8 @@ import Bar from "./Bar";
 import { FaPlay } from "react-icons/fa";
 import { imagePath } from "../images/imagePath";
 import { Bounce, Fade, Slide, Zoom } from "react-awesome-reveal";
+import { MetaTags } from "react-meta-tags";
+import Navbar from "./Navbar";
 
 // import "owl.carousel/dist/assets/owl.theme.default.css";
 const images24 = imagePath.images24;
@@ -107,81 +109,30 @@ const Home = () => {
     <div>
       {/* <!-- Seo Work --> */}
       {/* --------------------google site verification------------------------- */}
-
-      <meta
-        name="google-site-verification"
-        content="MrpHCzqBxBXYiTl0n8_uyepq4h2ZM0Xt3YuJDXZuLY4"
-      />
-      {/* --------------------google site verification------------------------- */}
-
-      <meta title=" Raj Resort Kelwa : Unwind in Luxury" />
-      <meta
-        name="description"
-        content="Discover a hidden gem at Raj Resort Karjat. Unwind amidst lush green landscapes, relish delectable cuisine yourself in the tranquility of nature. "
-      />
-
-      <meta name="title" content="Raj Resort Karjat : Unwind in Luxury" />
-      <meta
-        name="keywords"
-        content="resorts in karjat near station,
-        resort near karjat station,
-        best resort in karjat,
-        best resort in karjat for family,
-        best resort in karjat for couples,
-        couple friendly resort in karjat,
-        best resort in karjat with swimming pool,
-        best resorts to stay in karjat,
-        sunder farm resort karjat"
-      />
-      <link rel="canonical" href="https://www.sundarfarms.com/" />
-      <meta http-equiv="cache-control" content="no-cache" />
-      <meta http-equiv="expires" content="0" />
-      <meta http-equiv="pragma" content="no-cache" />
-      <meta
-        property="og:title"
-        content=" Raj Resort  Kelwa : Unwind in Luxury"
-      />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.sundarfarms.com/" />
-      <meta
-        property="og:title"
-        content=" Raj  Resort Karjat : Unwind in Luxury"
-      />
-      <meta
-        property="og:description"
-        content="Discover a hidden gem at Raj Resort Karjat. Unwind amidst lush green landscapes, relish delectable cuisine yourself in the tranquility of nature."
-      />
-      <meta property="article:tag" content="resorts in karjat near station" />
-      <meta property="article:tag" content="resort near karjat station" />
-      <meta property="article:tag" content="best resort in karjat" />
-      <meta property="article:tag" content="best resort in karjat for family" />
-      <meta
-        property="article:tag"
-        content="best resort in karjat for couples"
-      />
-      <meta property="article:tag" content="couple friendly resort in karjat" />
-      <meta property="article:tag" content="sunder farm resort karjat" />
-      <meta property="article:tag" content="best resorts to stay in karjat" />
-
-      <meta
-        name="description"
-        content="Discover a hidden gem at Raj Resort Karjat. Unwind amidst lush green landscapes, relish delectable cuisine yourself in the tranquility of nature."
-      />
-      <meta
-        name="keywords"
-        content="resorts in karjat near station,
-resort near karjat station,
-best resort in karjat,
-best resort in karjat for family,
-best resort in karjat for couples,
-couple friendly resort in karjat,
-best resort in karjat with swimming pool,
-best resorts to stay in karjat,
-sunder farm resort karjat"
-      >
-        {/* <!-- Seo End -->' */}
-      </meta>
+      <MetaTags>
+        <title>Resort in Palghar | Raj Resort</title>
+        <meta title="Resort in Palghar | Raj Resort" />
+        <meta
+          name="description"
+          content="Resort in Palghar, Best Resort in Kelve, Resort with Rooms in Kelve,  Resort for Events in Palghar, Resort near Kelve Beach"
+        />
+        <link rel="canonical" href="https://www.raj-resort.in/" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="Resort in Palghar | Raj Resort" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.raj-resort.in/" />
+        <meta
+          property="og:description"
+          content="Experience unparalleled luxury and serenity at our Resort in Palghar. Nestled amidst lush greenery, our exquisite accommodations offer gourmet dining options."
+        />
+        <meta
+          property="og:image"
+          content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png"
+        />
+      </MetaTags>
 
       <section
         className="hero-area set-bg"
@@ -195,120 +146,17 @@ sunder farm resort karjat"
           <div className="hero-text">
             <Slide bottom>
               <div className="logo">
-                <Link to="/">
-                  <img src={logo} alt="Raj-logo" />
-                </Link>
+                <Link to="/">{/* <img src={logo} alt="Raj-logo" /> */}</Link>
               </div>
             </Slide>
             <Bounce>
-              <h1>Premium Retreat</h1>
+              <h1>Resort in Palghar</h1>
             </Bounce>
           </div>
         </div>
         {/* </div>
         </div> */}
       </section>
-
-      {/* <div className="section-full p-t25 booking-bar d-lg-block d-none">
-        <div className="container">
-          <div className="booking-bar-inner">
-            <div className="booking-fram-name text-center">
-              <h3 className="m-a0">Book <br/> A Room<br/></h3>
-            </div>
-            <div className="booking-form">
-              <form>
-                <ul>
-                  <li className="date-cal-block">
-                    <div className="form-group clearfix">
-                      <label>In-Out Time</label>
-                      <div className="t-datepicker">
-                        <div className="t-check-in form-control">
-                          <div className="t-dates t-date-check-in">
-                            ➜<label className="t-date-info-title">In</label>
-                          </div>
-                          <input
-                            type="hidden"
-                            className="t-input-check-in"
-                            defaultValue="null"
-                            name="t-start"
-                          />
-                        </div>
-                        <div className="t-check-out form-control">
-                          <div className="t-dates t-date-check-out">
-                            ➜<label className="t-date-info-title">Out</label>
-                          </div>
-                          <input
-                            type="hidden"
-                            className="t-input-check-out"
-                            defaultValue="null"
-                            name="t-end"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="room-type-block">
-                    <div className="form-group">
-                      <label>Room Type</label>
-                      <div className="select-box">
-                        <select className="form-control" name="room">
-                          <option selected="selected" disabled="disabled">
-                            Single room
-                          </option>
-                          <option value="Single">Single room</option>
-                          <option value="Double">Double Room</option>
-                          <option value="Deluxe">Deluxe room</option>
-                        </select>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="adult-type-block">
-                    <div className="form-group">
-                      <label>Adult</label>
-                      <div className="select-box">
-                        <select className="form-control" name="No-adult">
-                          <option selected="selected" disabled="disabled">
-                            Adult
-                          </option>
-                          <option value="one">1</option>
-                          <option value="two">2</option>
-                          <option value="three">3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="children-type-block">
-                    <div className="form-group">
-                      <label>Childrens</label>
-                      <div className="select-box">
-                        <select className="form-control" name="No-children">
-                          <option selected="selected" disabled="disabled">
-                            Childrens
-                          </option>
-                          <option value="one">1</option>
-                          <option value="two">2</option>
-                          <option value="three">3</option>
-                        </select>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="booking-form-btn-block">
-                    <div className="form-group">
-                      <button
-                        type="submit"
-                        className="site-button-secondry btn-half"
-                      >
-                        <span> Book</span>
-                        <em />
-                      </button>
-                    </div>
-                  </li>
-                </ul>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       {/* -----------------------about farm------------------- */}
       <section className="intro-section spad">
@@ -548,7 +396,7 @@ sunder farm resort karjat"
                 <div className="home-about-block-inner">
                   <div className="item">
                     <div className="home-about-slider-pic">
-                      <img src={resto} alt="Raj Resort-luxury amenities" />
+                      <img src={resto} alt="Resort in Palghar" />
                     </div>
                   </div>
                 </div>
@@ -632,7 +480,7 @@ sunder farm resort karjat"
               <div className="row">
                 <div className="col-lg-7 col-md-7">
                   <div className="about-img">
-                    <img src={eventOneeee} alt="swimming pool" />
+                    <img src={eventOneeee} alt="Resort in Palghar" />
                   </div>
                 </div>
                 <div className="col-lg-5 col-md-5">
@@ -640,19 +488,19 @@ sunder farm resort karjat"
                     style={{ height: "85%" }}
                     className="about-img second-img"
                   >
-                    <img src={eventOneee} alt="garden" />
+                    <img src={eventOneee} alt="Resort in Palghar" />
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-5 col-md-5">
                   <div className="about-img third-img">
-                    <img src={eventOnee} alt="animal figures" />
+                    <img src={eventOnee} alt="Resort in Palghar" />
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-7">
                   <div className="about-img">
-                    <img src={eventOne} alt="tent" />
+                    <img src={eventOne} alt="Resort in Palghar" />
                   </div>
                 </div>
               </div>

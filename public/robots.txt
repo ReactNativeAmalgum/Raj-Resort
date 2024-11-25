@@ -1,3 +1,12 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+allow:/
+allow:/best-resort-in-kelve
+allow:/resort-with-rooms-in-kelve
+allow:/resort-for-events-in-palghar
+allow:/resort-near-kelve-beach
+# Host
+Host: https://www.raj-resort.in/
+
+# Sitemaps
+Sitemap: https://www.raj-resort.in/sitemap.xml

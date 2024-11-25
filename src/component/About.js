@@ -1,20 +1,21 @@
 import { useState, React } from "react";
-import $ from 'jquery';
+import $ from "jquery";
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
-import { Navigation } from 'swiper/modules';
+import { Navigation } from "swiper/modules";
 import "../css/About.css";
-import  { useRef } from 'react';
+import { useRef } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import Footer from "../component/Footer";
 import Attraction from "./Attraction";
 import { imagePath } from "../images/imagePath";
+import { MetaTags } from "react-meta-tags";
 
 const cl2 = imagePath.cl2;
 const cl3 = imagePath.cl3;
@@ -27,9 +28,9 @@ const room5 = imagePath.room5;
 const room6 = imagePath.room6;
 const pool1 = imagePath.pool1;
 const pool2 = imagePath.pool2;
-const pool3 = imagePath.pool3
-const pool4 = imagePath.pool4
-const pool5 = imagePath.pool5
+const pool3 = imagePath.pool3;
+const pool4 = imagePath.pool4;
+const pool5 = imagePath.pool5;
 const wed = imagePath.wed;
 const eve1 = imagePath.eventOne;
 const eve2 = imagePath.eventOnee;
@@ -58,7 +59,7 @@ const About = () => {
       custPhone = $("#custPhone").val();
     } else {
     }
-   
+
     if ($("#custEmail").val() !== "") {
       custEmail = $("#custEmail").val();
     } else {
@@ -68,7 +69,7 @@ const About = () => {
       custMessage = $("#custMessage").val();
     } else {
     }
-    
+
     var body =
       '<!DOCTYPE html><html><head><title>Raj</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><body style="margin:0!important;padding:0!important;background-color:#eee" bgcolor="#eeeeee"><div style="display:none;font-size:1px;color:#fefefe;line-height:1px;font-family:Open Sans,Helvetica,Arial,sans-serif;max-height:0;max-width:0;opacity:0;overflow:hidden"></div><table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#fff"><tr><td align="center" style="background-color:#eee" bgcolor="#eeeeee"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px"><tr><td align="center" valign="top" style="font-size:0;padding:10px" bgcolor="#e56f35"><div style="display:inline-block;max-width:100%;min-width:100px;vertical-align:top;width:100%"><table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%"><tr><td align="left" valign="top" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:6px;font-weight:800;line-height:10px" class="mobile-center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px"><tr><td width="100%" align="center" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px;font-weight:800;line-height:24px;padding:10px"><a href="tel:+91" style="text-decoration:none;color:#fff;font-family:serif;font-size:16px">Leads Generate for Raj</a></td></tr></table></td></tr></table></div></td></tr><tr><td align="center" valign="top" style="font-size:0;padding:15px" bgcolor="#fff"><div style="display:inline-block;max-width:100%;min-width:100px;vertical-align:top;display:fle;justify-content:center;align-items:center;width:100%"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%"><tr><td align="center" valign="top" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:36px;font-weight:800;line-height:48px" class="mobile-center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px"><tr><td width="100%" align="center" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-weight:800"><img style="width:120px;height:120px" src="" alt=""></td></tr></table></td></tr></table></div></td></tr><tr><td align="center" valign="top" style="font-size:0;padding:0" bgcolor="#e56f35"><div style="display:inline-block;max-width:100%;min-width:100px;vertical-align:top;display:fle;justify-content:center;align-items:center;width:100%"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%"><tr><td width="100%" align="center" valign="top" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px;font-weight:800;padding:10px 0" class="mobile-center"><h1 style="text-transform:capitalize;font-size:14px;font-weight:500;margin:0;text-align:center;color:#fff">Client Enquiry Details</h1></td></tr></table></div></td></tr><tr><td align="center" height="100%" valign="top" width="100%" style="padding:0 35px 35px 35px;background-color:#fff" bgcolor="#eee"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:660px"><tr><td width="100%" align="center" valign="top" style="font-size:0"><div style="display:inline-block;max-width:50%;min-width:240px;vertical-align:top;text-align:center;width:100%"><table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:300px"><tr><td width="100%" align="left" valign="top" style="font-family:Open Sans,Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:24px"><p style="font-size:16px;font-weight:600;color:#e56f35">Customer Name:</p><p style="font-size:14px;font-weight:500;color:#111">' +
       custName +
@@ -115,89 +116,30 @@ const About = () => {
   // const handleShow = () => setShow(true);
   return (
     <div>
-
-  {/* <!-- Seo Work --> */}
-      {/* --------------------google site verification------------------------- */}
-
-      <meta
-        name="google-site-verification"
-        content="MrpHCzqBxBXYiTl0n8_uyepq4h2ZM0Xt3YuJDXZuLY4"
-      />
-      {/* --------------------google site verification------------------------- */}
-
-      <meta title="Best Resort In Palghar For Couples |Sundar Farm Resort Palghar" />
-      <meta
-        name="description"
-        content="Experience the ultimate romantic getaway at Best Resort In Palghar For Couples. Enjoy breathtaking views and unforgettable moments together. "
-      />
-
-      <meta
-        name="title"
-        content="Best Resort In Palghar For Couples |Sundar Farm Resort Palghar"
-      />
-      <meta
-        name="keywords"
-        content="resorts in Palghar near station,
-resort near Palghar station,
-best resort in Palghar,
-best resort in Palghar for family,
-best resort in Palghar for couples,
-couple friendly resort in Palghar,
-best resort in Palghar with swimming pool,
-best resorts to stay in Palghar,
-sunder farm resort Palghar"
-      />
-      <link rel="canonical" href="https://www.sundarfarms.com/" />
-      <meta http-equiv="cache-control" content="no-cache" />
-      <meta http-equiv="expires" content="0" />
-      <meta http-equiv="pragma" content="no-cache" />
-      <meta
-        property="og:title"
-        content="Best Resort In Palghar For Couples |Sundar Farm Resort Palghar"
-      />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.sundarfarms.com/" />
-      <meta
-        property="og:title"
-        content="Best Resort In Palghar For Couples |Sundar Farm Resort Palghar"
-      />
-      <meta
-        property="og:description"
-        content="Experience the ultimate romantic getaway at Best Resort In Palghar For Couples. Enjoy breathtaking views and unforgettable moments together. "
-      />
-      <meta property="article:tag" content="resorts in Palghar near station" />
-      <meta property="article:tag" content="resort near Palghar station" />
-      <meta property="article:tag" content="best resort in Palghar" />
-      <meta property="article:tag" content="best resort in Palghar for family" />
-      <meta
-        property="article:tag"
-        content="best resort in Palghar for couples"
-      />
-      <meta property="article:tag" content="couple friendly resort in Palghar" />
-      <meta property="article:tag" content="sunder farm resort Palghar" />
-      <meta property="article:tag" content="best resorts to stay in Palghar" />
-
-      <meta
-        name="description"
-        content="Experience the ultimate romantic getaway at Best Resort In Palghar For Couples. Enjoy breathtaking views and unforgettable moments together. "
-      />
-      <meta
-        name="keywords"
-        content="resorts in Palghar near station,
-resort near Palghar station,
-best resort in Palghar,
-best resort in Palghar for family,
-best resort in Palghar for couples,
-couple friendly resort in Palghar,
-best resort in Palghar with swimming pool,
-best resorts to stay in Palghar,
-sunder farm resort Palghar"
-      >
-        {/* <!-- Seo End -->' */}
-      </meta>
-
-
+      <MetaTags>
+        <title>Best Resort in Kelve | Raj Resort</title>
+        <meta title="Best Resort in Kelve | Raj Resort" />
+        <meta
+          name="description"
+          content="Resort in Palghar, Best Resort in Kelve, Resort with Rooms in Kelve,  Resort for Events in Palghar, Resort near Kelve Beach"
+        />
+        <link rel="canonical" href="https://www.raj-resort.in/" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="Best Resort in Kelve | Raj Resort" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.raj-resort.in/" />
+        <meta
+          property="og:description"
+          content="Indulge in luxury and relaxation at the Best Resort in Kelve. Experience unmatched comfort, stunning views, and top-notch amenities for your perfect vacation."
+        />
+        <meta
+          property="og:image"
+          content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png"
+        />
+      </MetaTags>
       <div class="page-content ">
         <div
           className="wt-bnr-inr overlay-wraper bg-parallax bg-top-center"
@@ -212,9 +154,7 @@ sunder farm resort Palghar"
           <div className="container">
             <div className="wt-bnr-inr-entry">
               <div className="banner-title-outer">
-             
                 <div className="banner-title-name">
-
                   <h2 className="">About Us</h2>
                 </div>
               </div>
@@ -241,25 +181,36 @@ sunder farm resort Palghar"
               <div className="about-left">
                 <div className="section-title">
                   <span>a memorable holliday</span>
+                  <h1 className="specialh1">
+                  Best Resort in Kelve
+
+                  </h1>
                   <h2>
                     Since 2004 <br />
                     for Service
                   </h2>
                 </div>
                 <p className="second-text">
-                Established in 2004, Raj Resort has firmly established itself as the best resort in Kelva, offering a serene haven nestled in the heart of Palghar. Our journey began with a simple vision - to provide a sanctuary where weary souls could escape the hustle and bustle of city life and reconnect with nature's tranquility. Situated amidst lush greenery and picturesque landscapes, Raj Resort has flourished into the undisputed best resort in Kelva, cherished by visitors seeking a truly remarkable retreat.
+                  Established in 2004, Raj Resort has firmly established itself
+                  as the best resort in Kelva, offering a serene haven nestled
+                  in the heart of Palghar. Our journey began with a simple
+                  vision - to provide a sanctuary where weary souls could escape
+                  the hustle and bustle of city life and reconnect with nature's
+                  tranquility. Situated amidst lush greenery and picturesque
+                  landscapes, Raj Resort has flourished into the undisputed best
+                  resort in Kelva, cherished by visitors seeking a truly
+                  remarkable retreat.
                 </p>
                 <p>
-                What sets Raj Resort apart as the best resort in Kelva is not just our idyllic location, but our unwavering commitment to creating unforgettable memories for each visitor who walks through our doors. Our roots run deep in the community. Whether you're seeking a peaceful getaway, a romantic escape, or a fun-filled family vacation.
+                  What sets Raj Resort apart as the best resort in Kelva is not
+                  just our idyllic location, but our unwavering commitment to
+                  creating unforgettable memories for each visitor who walks
+                  through our doors. Our roots run deep in the community.
+                  Whether you're seeking a peaceful getaway, a romantic escape,
+                  or a fun-filled family vacation.
                 </p>
-                <button
-                 
-                  className="primary-btn"
-                >
-                     <Link to="/Contact">
-                  
-                  Make a Reservation
-                  </Link>
+                <button className="primary-btn">
+                  <Link to="/Contact">Make a Reservation</Link>
                 </button>
               </div>
             </div>
@@ -267,24 +218,24 @@ sunder farm resort Palghar"
               <div className="row">
                 <div className="col-lg-6 col-md-7">
                   <div className="about-img">
-                    <img src={eve1} alt="" />
+                    <img src={eve1} alt="Best Resort in Kelve" />
                   </div>
                 </div>
                 <div className="col-lg-6 col-md-5">
                   <div className="about-img second-img">
-                    <img src={eve2} alt="" />
+                    <img src={eve2} alt="Best Resort in Kelve" />
                   </div>
                 </div>
               </div>
               <div className="row">
                 <div className="col-lg-5 col-md-5">
                   <div className="about-img third-img">
-                    <img src={eve3} alt="" />
+                    <img src={eve3} alt="Best Resort in Kelve" />
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-7">
                   <div className="about-img">
-                    <img src={eve4} alt="" />
+                    <img src={eve4} alt="Best Resort in Kelve" />
                   </div>
                 </div>
               </div>
@@ -296,7 +247,9 @@ sunder farm resort Palghar"
       <section
         className="milestone-counter spad set-bg"
         data-setbg="img/about/milestone-bg.jpg"
-        style={{ backgroundImage: `url(${"https://imgs.search.brave.com/Uf390mcQ5O_Yg3fhaxem2T0DLCQJJT2mQDqap2NnCk4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEudGhyaWxsb3Bo/aWxpYS5jb20vZmls/ZXN0b3JlLzZncDF1/enExMXowdmg1ZXpx/c3N0eG1tMWVsazhf/c2F2YW5hLWxha2Ut/cmVzb3J0LXN1cnZl/eS1uby0xNTMtYXQt/cG9zdC1kYWhlZ2Fv/bi1uYXNoaWstaG90/ZWxzLW94Zm4yLndl/YnA_dz03NTMmaD00/NTAmZHBy"})` }}
+        style={{
+          backgroundImage: `url(${"https://imgs.search.brave.com/Uf390mcQ5O_Yg3fhaxem2T0DLCQJJT2mQDqap2NnCk4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEudGhyaWxsb3Bo/aWxpYS5jb20vZmls/ZXN0b3JlLzZncDF1/enExMXowdmg1ZXpx/c3N0eG1tMWVsazhf/c2F2YW5hLWxha2Ut/cmVzb3J0LXN1cnZl/eS1uby0xNTMtYXQt/cG9zdC1kYWhlZ2Fv/bi1uYXNoaWstaG90/ZWxzLW94Zm4yLndl/YnA_dz03NTMmaD00/NTAmZHBy"})`,
+        }}
       >
         <div className="container">
           <div className="row">
@@ -342,11 +295,9 @@ sunder farm resort Palghar"
       <div className="section-full bg-gray p-tb90 ">
         <div className="container">
           {/* TITLE START */}
-          <div className="section-head text-center">
-            
-          </div>
+          <div className="section-head text-center"></div>
           {/* TITLE END */}
-          <Attraction/>
+          <Attraction />
         </div>
       </div>
       <Modal

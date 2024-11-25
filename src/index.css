@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.specialh1{
+  /* color: aqua; 
+  */
+  text-align: left;
+  align-self:'left';
+  font-family: "Montserrat", sans-serif;
+}
