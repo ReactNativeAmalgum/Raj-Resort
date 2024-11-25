@@ -12,13 +12,12 @@ import Page404 from "./component/Page404";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <Navbar />
       <HashRouter>
         <WhatsappIcon />
-        <Navbar />
 
         <Routes>
-
           <Route path="/" element={<Home />} />
           <Route path="/best-resort-in-kelve" element={<About />} />
           <Route path="/resort-with-rooms-in-kelve" element={<Rooms />} />
@@ -27,7 +26,7 @@ const App = () => {
           <Route path="*" element={<Page404 />} />
         </Routes>
       </HashRouter>
-    </div>
+    </>
   );
 };
 
