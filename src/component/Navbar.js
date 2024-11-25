@@ -18,7 +18,7 @@ const Navbar = () => {
     const handleClose = () => setShowModal(false);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-transprent bg-transparent">
+        <nav className="navbar navbar-expand-lg t bg-transparent">
             <div className="container-fluid">
                 <Link className="navbar-brand" to="/">
                     <img src={logo} alt="Resort in Palghar" style={{ maxHeight: "60px" }} />

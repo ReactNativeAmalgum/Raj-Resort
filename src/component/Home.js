@@ -133,7 +133,6 @@ const Home = () => {
           content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png"
         />
       </MetaTags>
-
       <section
         className="hero-area set-bg"
         data-setbg="img/hero-bg.jpg"

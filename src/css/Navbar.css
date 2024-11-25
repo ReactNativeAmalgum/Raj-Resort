@@ -1313,6 +1313,7 @@
 
 .navbar {
     background-color: transparent !important; 
+    background: none;
     box-shadow: none;
     padding-left: 30px;
     padding-right: 30px;
